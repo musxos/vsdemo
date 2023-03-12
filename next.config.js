@@ -2,7 +2,7 @@
 const nextConfig = {
   concurrentFeatures: true,
   reactStrictMode: true,
-  distDir: "build",
+  distDir: ".next",
 };
 
 module.exports = nextConfig;
