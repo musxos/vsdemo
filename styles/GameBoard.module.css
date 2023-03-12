@@ -1,0 +1,94 @@
+.gameBoard {
+    display: flex;
+    width: 550px;
+    height: 550px;
+    background-color: rgb(23, 23, 134);
+}
+
+.gameBoard .squaresDiv {
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+    grid-gap: 1px;
+    width: 550px;
+    height: 550px;
+    background-color: white;
+}
+
+
+.gameBoard .green {
+    background-color: green;
+}
+
+.gameBoard .active {
+    background-color: purple;
+}
+
+.gameBoard .red {
+    background-color: red;
+}
+
+.gameBoard .yellow {
+    background-color: rgb(198, 215, 13);
+}
+
+.gameBoard .brown {
+    background-color: rgb(79, 58, 20);
+}
+
+.gameBoard .lightBlue {
+    background-color: lightblue;
+}
+
+
+.buttonsContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 63%;
+    margin-left: 5%;
+    transform: translateY(-50%);
+    width: 110px;
+    height: 110px;
+    border-radius: 25px;
+    background-color: #ddd;
+    flex-direction: column;
+    align-items: center;
+}
+
+.buttonsContainer button {
+    margin: 30px 30px;
+    padding: 0;
+    width: 30px;
+    height: 30px;
+    background-color: rgb(115, 190, 40);
+    border: none;
+    cursor: pointer;
+    font-size: 22px;
+    transition: 0.5s;
+    border-radius: 5px;
+}
+
+.buttonsContainer button:hover {
+    background-color: blue;
+}
+
+
+.leftButton {
+    position: absolute;
+    right: 50px;
+}
+
+.rightButton {
+    position: absolute;
+    left: 50px;
+}
+
+.buttonsContainer button:not(:first-of-type):not(:last-of-type) {
+    width: 30px;
+    height: 50px;
+}
+
+.buttonsContainer button:first-of-type,
+.buttonsContainer button:last-of-type {
+    width: 50px;
+}

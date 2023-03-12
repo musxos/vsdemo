@@ -1,0 +1,27 @@
+.heroCards {
+    display: flex;
+}
+
+.heroCard {
+    height: 200px;
+    width: 150px;
+    border: 1px solid black;
+    margin: 10px;
+    cursor: pointer;
+    display: flex;
+}
+
+.heroStat {
+    text-align: center;
+    padding-top: 140px;
+    margin-right: 14px;
+}
+
+
+.newDeck {
+    display: flex;
+}
+
+.newDeckElements {
+    margin: 20px;
+}
